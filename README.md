@@ -1,7 +1,7 @@
 <div align="center">
-    <a href="https://yli.github.io" style="font-size: 40px; color: #5cbdaa" title="Go to Yifei's Homepage">HOMEPAGE</a>
-    <h1>☝</h1>
-    <h1>Everything about Li, Yifei</h1>
+    <a href="https://yli.github.io">HOMEPAGE</a>
+    <h2>☝</h2>
+    <h2>Everything about Li, Yifei</h2>
 </div>
 
 ---
