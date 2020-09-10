@@ -1,7 +1,7 @@
 <div align="center">
-    <a href="https://yli.github.io">HOMEPAGE</a>
+    <a href="https://realliyifei.github.io">HOMEPAGE</a>
     <h2>☝</h2>
-    <h2>Everything about Li, Yifei</h2>
+    <h2>Everything about Li, Yi-Fei</h2>
 </div>
 
 ---
