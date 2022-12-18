@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // lineColor: '#5cbdaa'
     // tiffany blue
     dotColor: '#0abab5',
-    lineColor: '#0abab5'
+    lineColor: '#0abab5',
+    particleRadius: 5,
+    lineWidth: 0.5,
   });
   var intro = document.getElementById('intro');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
