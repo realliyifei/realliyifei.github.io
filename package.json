@@ -30,6 +30,7 @@
     "devDependencies": {
         "browser-sync": "^2.27.4",
         "del": "^6.0.0",
+        "gh-pages": "^6.0.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^8.0.0",
         "gulp-clean-css": "^4.3.0",
@@ -64,5 +65,8 @@
         "smooth-scroll": "^16.1.0",
         "sticky-sidebar": "3.3.1",
         "waypoints": "4.0.1"
+    },
+    "scripts": {
+        "deploy": "gulp build && gh-pages -d dist"
     }
 }
