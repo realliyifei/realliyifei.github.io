@@ -4,7 +4,7 @@
 
 ## Dev
 
-1. During development, per the [original readme](neuromorphism-README.md), we should type `gulp` in terminal to display the html in browser.
+1. During development, we should develop index.html in the src folder. Per the [original readme](neuromorphism-README.md), we should type `gulp` in terminal to display the html in browser.
 2. After development, we should run `sh deploy.sh` to minify and deploy to the homepage. How to know it is minified successfully? We can check whether it can be previewed via the side of vscode. However, note that a few components might be not perfect, as the best display is always via the browser.
 
 ## Info 
