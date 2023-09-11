@@ -9,5 +9,5 @@
 
 ## Info 
 
-1. Useful links: [original document](https://themesberg.com/docs/neumorphism-ui/getting-started/quick-start/), [useful compoenents code](https://themesberg.com/docs/neumorphism-ui/components/accordions/), and [original index](https://github.com/themesberg/neumorphism-ui-bootstrap/blob/master/src/index.html).
-2. Also check the [pages in original repo](./src/html/pages).
+1. Documents: [quick start](https://themesberg.com/docs/neumorphism-ui/getting-started/quick-start/), [component code snippets](https://themesberg.com/docs/neumorphism-ui/components/accordions/) 
+2. Original repo: [index](https://github.com/themesberg/neumorphism-ui-bootstrap/blob/master/src/index.html) and [page samples](https://github.com/themesberg/neumorphism-ui-bootstrap/tree/master/src/html/pages) (more [samples](https://demo.themesberg.com/neumorphism-ui-pro/) from the PROversion)
