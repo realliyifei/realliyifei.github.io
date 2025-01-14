@@ -4,8 +4,8 @@
 
 ## Dev
 
-1. During development, we should develop index.html in the src folder. Per the [original readme](https://github.com/themesberg/neumorphism-ui-bootstrap/tree/master), we should type `gulp` in terminal to display the html in browser.
-2. After development, we should run `sh deploy.sh` to minify webpage and deploy index.html to the root. How to know it is minified successfully? We can check whether it can be previewed via the side of vscode. However, note that a few components might be not perfect, as the best display is always via the browser.
+1.	During development, the index.html file should be created in the src folder. According to the [original readme](https://github.com/themesberg/neumorphism-ui-bootstrap/tree/master), you can type `gulp` in the terminal to preview the HTML in the browser.
+2.	After completing development, run `sh deploy.sh` to minify the webpage and deploy the index.html file to the root directory. To verify successful minification, check if the file can be previewed on the side panel of VS Code. However, keep in mind that some components may not display perfectly, as the browser provides the most accurate rendering.
 
 ## Info 
 
