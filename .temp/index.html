@@ -72,32 +72,16 @@
 
     <style>
         .research-list {
-            font-size: 1.35rem;
+            font-size: 1.25rem; /* match .lead font size */
             line-height: 1.6;
-            transform: scale(1.12);
-            transform-origin: top left;
         }
-        .research-list li {
-            position: relative;
-            padding-left: 1.6rem;
+        .research-item {
             margin-bottom: 0.45rem;
+            padding-left: 2rem; /* add tab-like indent */
         }
-        .research-list li::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0.45rem;
-            width: 0.6rem;
-            height: 0.6rem;
-            border-radius: 50%;
-            background: #1f2937;
-            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12), -2px -2px 6px rgba(255, 255, 255, 0.85);
-        }
-        @media (max-width: 576px) {
-            .research-list {
-                font-size: 1.2rem;
-                transform: scale(1.08);
-            }
+        .selected-work-title {
+            font-size: 1.4rem; /* smaller title */
+            line-height: 1.3;
         }
     </style>
 </head>
@@ -159,14 +143,14 @@
         <section class="section section-lg pt-6 pb-0">
             <div class="container">
                 <div class="row justify-content-center mb-4">
-                    <div class="col-12 col-md-10">
-                        <p class="lead mb-3 text-center text-md-left">Yifei is a (&#x1D4CD;-&#x1D7E4;&#x1D7E2;&#x1D7E4;&#x1D7E5;)-Year PhD at University of Pennsylvania advised by <a href="https://www.cis.upenn.edu/~myatskar/">Prof. Mark Yatskar</a>, affiliated with <a href="https://nlp.cis.upenn.edu">Penn NLP</a>. In the past, he has also worked with <a href="https://www.cis.upenn.edu/~ungar/">Prof. Lyle Ungar</a>, <a href="https://www.stern.nyu.edu/faculty/bio/joao-sedoc">Prof. João Sedoc</a>, and <a href="https://www.cis.upenn.edu/~ccb/index.html">Prof. Chris Callison-Burch</a>.</p>
-                        <p class="lead mb-0 text-center text-md-left">His research spans LLMs and multimodality, with a primary focus on: </p>
-                        <ul class="list-unstyled mt-2 mb-0 research-list">
-                            <li>Scalable Evaluation and Reward</li>
-                            <li>Deep Research Agents</li>
-                            <li>Applications and Utilities in Expert-level AI and Scientific Discovery</li>
-                        </ul>
+                    <div class="col-12 col-md-10 text-left">
+                        <p class="lead mb-3 text-left">Yifei is a (&#x1D4CD;-&#x1D7E4;&#x1D7E2;&#x1D7E4;&#x1D7E5;)-Year PhD at University of Pennsylvania advised by <a href="https://www.cis.upenn.edu/~myatskar/">Prof. Mark Yatskar</a>, affiliated with <a href="https://nlp.cis.upenn.edu">Penn NLP</a>. In the past, he has also worked with <a href="https://www.cis.upenn.edu/~ungar/">Prof. Lyle Ungar</a>, <a href="https://www.stern.nyu.edu/faculty/bio/joao-sedoc">Prof. João Sedoc</a>, and <a href="https://www.cis.upenn.edu/~ccb/index.html">Prof. Chris Callison-Burch</a>.</p>
+                        <p class="lead mb-0 text-left">His research spans LLMs and multimodality, with a primary focus on: </p>
+                        <div class="research-list mt-2 mb-0">
+                            <div class="research-item">(1) Scalable Evaluation and Reward</div>
+                            <div class="research-item">(2) Deep Research Agents</div>
+                            <div class="research-item">(3) Applications and Utilities in Expert-level AI and Scientific Discovery</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,27 +158,29 @@
         <!-- /About -->
 
         <!-- Selected Works -->
-        <section id="selected-works" class="section section-lg pt-6 pb-0">
+        <section id="selected-works" class="section section-lg pt-4 pb-0">
             <div class="container">
                 <div class="row justify-content-center mb-4">
                     <div class="col-12 col-md-10">
-                        <h2 class="display-3 text-center mb-4">Selected Works</h2>
+                        <h2 class="display-3 text-left mb-4">Selected Works</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10">
                         <div class="card shadow-soft border-light p-4 mb-4">
-                            <h4 class="h4 mb-3">
+                            <h4 class="h4 mb-3 selected-work-title">
                                 <strong>ResearchQA: Evaluating Scholarly Question Answering at Scale Across 75 Fields with Survey-Mined Questions and Rubrics</strong>
                             </h4>
                             <p class="mb-2"><strong>Li S. Yifei</strong> <sup>*</sup>, Allen Chang <sup>*</sup>, Chaitanya Malaviya, Mark Yatskar</p>
-                            <p class="mb-3">ResearchQA proposes a scalable evaluation framework for scholarly long-form question answering via data synthesis, benchmarking frontier LLM systems including deep researches by ensembled LLM judges. By distilling survey papers, it yields 21K queries and 160K rubric items across 75 research fields, which are validated by 31 Ph.D. annotators.</p>
-                            <div class="d-flex flex-wrap align-items-center mb-3">
-                                <span class="text-danger font-weight-bold mr-3 mb-2">TACL 2026 (present in ACL 2026)</span>
-                                <a href="https://arxiv.org/abs/2509.00496" target="_blank" class="badge badge-secondary mr-2 mb-2">Paper</a>
-                                <a href="https://cylumn.com/ResearchQA" target="_blank" class="badge badge-secondary mr-2 mb-2">Website</a>
-                                <a href="https://huggingface.co/datasets/realliyifei/ResearchQA" target="_blank" class="badge badge-secondary mr-2 mb-2">Data</a>
-                                <a href="https://github.com/realliyifei/ResearchQA" target="_blank" class="badge badge-secondary mb-2">Code</a>
+                            <p class="mb-3">ResearchQA proposes a <em>scalable query-rubric evaluation framework</em> for scholarly long-form question answering via data synthesis, benchmarking frontier LLM systems including deep research agents by ensembled LLM judges. By <em>distilling the research expertise from survey papers</em>, it yields 21K queries and 160K specific rubric items across 75 research fields, which are validated by 31 Ph.D. annotators.</p>
+                            <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center mb-3">
+                                <span class="text-danger font-weight-bold mb-2 mb-md-0 mr-md-3">TACL 2026 (present in ACL 2026)</span>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <a href="https://arxiv.org/abs/2509.00496" target="_blank" class="badge badge-secondary mr-2 mb-2">Paper</a>
+                                    <a href="https://cylumn.com/ResearchQA" target="_blank" class="badge badge-secondary mr-2 mb-2">Website</a>
+                                    <a href="https://huggingface.co/datasets/realliyifei/ResearchQA" target="_blank" class="badge badge-secondary mr-2 mb-2">Data</a>
+                                    <a href="https://github.com/realliyifei/ResearchQA" target="_blank" class="badge badge-secondary mb-2">Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
